@@ -22,15 +22,12 @@
   <!-- Header Section -->
 
   <header class="header mt-[10px] sm:mt-[20px] md:mt-[30px] lg:mt-[34px] xl:mt-[38px] xxl:mt-[45px]">
-    
+
     <div class="container mx-auto flex justify-between items-center md:gap-[56px] lg:gap-[74px] xl:gap-[93px] xxl:gap-[112px]">
         <div class="">
           <img src="./assets/images/logo.png" alt="" class="w-[62px] sm:w-[62px] md:w-[75.5px] lg:w-[100px] xl:w-[125px] xxl:w-[151px]">
         </div>
 
-
-        <div id="navMenu" class="hidden md:flex md:items-center md:gap-[24px] lg:gap-[32px] xl:gap-[40px] xxl:gap-[48px]
-          flex-col md:flex-row absolute md:static top-full left-0 w-full md:w-auto bg-white md:bg-transparent p-4 md:p-0 shadow md:shadow-none">
           <nav class="py-[12px] md:py-[14px] lg:py-[18px] xl:py-[23px] xxl:py-[28px] hidden md:block">
             <ul class="flex flex-col md:flex-row justify-between items-center md:gap-[24px] lg:gap-[32px] xl:gap-[40px] xxl:gap-[48px]">
               <li class="font-roboto text-black text-[16px] md:text-[14px] lg:text-[16px] xxl:text-[18px]"><a href="#">Services</a></li>
@@ -48,9 +45,22 @@
             <button class="bg-blak text-white font-semibold font-manrope p-[6px_16px] md:p-[8px_20px]
             xxl:p-[16px_40px] rounded-[50px] cursor-pointer text-[16px] md:text-[8px] lg:text-[15px] xl:text-[17px] xxl:text-[20px] hidden md:block">Sign Up</button>
           </div>
-        </div>
-        <div class="md:hidden">
+
+        <div class="md:hidden z-50">
           <span id="menuBtn" class="material-symbols-outlined cursor-pointer text-3xl">menu</span>
+        </div>
+
+        <div id="nevMenu" class="hidden absolute z-40">
+          <ul class="flex flex-col justify-between items-center gap-[20px]">
+              <li class="font-roboto text-black text-[16px] md:text-[14px] lg:text-[16px] xxl:text-[18px]"><a href="#">Services</a></li>
+              <li class="font-roboto text-black text-[16px] md:text-[14px] lg:text-[16px] xxl:text-[18px]"><a href="#">Works</a></li>
+              <li class="font-roboto text-black text-[16px] md:text-[14px] lg:text-[16px] xxl:text-[18px]"><a href="#">Different</a></li>
+              <li class="font-roboto text-black text-[16px] md:text-[14px] lg:text-[16px] xxl:text-[18px]"><a href="#">Reviews</a></li>
+              <li class="font-roboto text-black text-[16px] md:text-[14px] lg:text-[16px] xxl:text-[18px]"><a href="#">Pricing</a></li>
+              <li class="font-roboto text-black text-[16px] md:text-[14px] lg:text-[16px] xxl:text-[18px]"><a href="#">Contact</a></li>
+            </ul>
+            <a href="#">Sign In</a>
+            <a href="#">Sign Up</a>
         </div>
       </div>
 
@@ -87,16 +97,16 @@
 
         <!-- cards -->
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center items-center gap-[36px] mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 justify-center items-center gap-[36px] mx-auto">
 
           <!-- card1 -->
 
-           <div class="bg-llgrin py-[46px] px-[28px] rounded-[24px] flex flex-col justify-center items-center gap-[54px] max-w-[457px]">
+           <div class="bg-llgrin py-[46px] px-[28px] rounded-[24px] flex flex-col justify-center items-center gap-[54px] max-w-[457px] mx-auto">
               <div class="flex justify-between items-start gap-[24px]">
                 <img src="./assets/images/card1.png" alt="" class="h-[48px]">
                 <p class="text-[32px] font-semibold font-roboto max-w-[316px] leading-[40px] text-blak">Sales overview from Previous Day</p>
               </div>
-                <div class="bg-white rounded-[24px] max-w-[420px] h-[361px] p-4">
+                <div class="bg-white rounded-[24px] max-w-[400px] h-[361px] p-4">
                   <div class="flex justify-between items-center gap-[16px] max-w-[308px]">
                     <img src="./assets/images/sale.png" alt="">
                     <p class="text-[24px] font-manrope font-[500] text-silver text-center">Total sales: <span class="font-bold font-roboto text-[32px]">$12,500</span></p>
@@ -141,7 +151,7 @@
 
             <!-- card3 -->
 
-            <div class="bg-yelo py-[46px] px-[24px] rounded-[25px] flex flex-col justify-center items-center gap-[50px] max-w-[457px]">
+            <div class="bg-yelo py-[46px] px-[24px] rounded-[25px] flex flex-col justify-center items-center gap-[50px] max-w-[457px] mx-auto">
               <div class="flex justify-between items-start gap-[24px]">
                 <img src="./assets/images/card3.png" alt="" class="h-[48px]">
                 <p class="text-[32px] font-semibold font-roboto max-w-[316px] leading-[40px] text-blak">Secure & Streamlined Workflow</p>
@@ -168,16 +178,17 @@
                 <p class="text-[18px] font-semibold font-manrope text-silver"><span class="bg-llgrin inline-flex justify-center
                    items-center h-[20px] w-[20px] rounded-full mr-[16px]">+</span>Add Number</p>
               </div>
-              <div class="flex justify-between items-center gap-[26px] max-w-[373px]
+              <div class="flex justify-between items-center gap-[10px] md:gap-[12px] xl:gap-[16px] xxl:gap-[20px] max-w-[373px]
                max-h-[96px] py-[16px] px-[24px] rounded-[25px] bg-white relative rotate-[6.68deg] -top-[13px]">
                 <img src="./assets/images/man6.png" alt="">
                 <div class="min-w-[126px]">
-                  <p class="font-roboto font-bold text-[24px] text-blak">Online</p>
-                  <p class="font-manrope text-[16px] font-[400] text-silver">Tomy Restaurant</p>
+                  <p class="font-roboto font-bold text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px] xl:text-[20px] xxl:text-[24px] text-blak">Online</p>
+                  <p class="font-manrope text-[8px] sm:text-[10px] lg:text-[12px] xl:text-[14px] xxl:text-[16px] font-[400] text-silver">Tomy Restaurant</p>
                 </div>
                 <div class="">
-                  <p class="font-roboto font-semibold text-[20px] text-blak">+$10k</p>
-                  <button class="px-[16px] py-[8px] rounded-[92px] bg-llgrin text-grin text-[14px] font-semibold">confirm</button>
+                  <p class="font-roboto font-semibold text-[10px] sm:text-[12px] lg:text-[14px] xl:text-[16px] xxl:text-[20px] text-blak">+$10k</p>
+                  <button class="px-[16px] py-[8px] rounded-[92px] bg-llgrin text-grin text-[8px]
+                   sm:text-[9px] lg:text-[10px] xl:text-[12px] xxl:text-[14px] font-semibold">confirm</button>
                 </div>
               </div>
             </div>
@@ -243,9 +254,9 @@
         <!-- cards -->
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-between items-center gap-[36px] mt-[70px]
-         sm:mt-[80px] md:mt-[90px] lg:mt-[110px] xl:mt-[120px] xxl:mt-[133px] mb-6">
+         sm:mt-[80px] md:mt-[90px] lg:mt-[110px] xl:mt-[120px] xxl:mt-[133px] mb-6 mx-auto">
 
-          <div class="flex flex-col justify-between items-start p-[48px] gap-[24px] max-w-[456px]
+          <div class="flex flex-col justify-between items-start p-[48px] gap-[24px] mx-auto max-w-[456px]
            rounded-[25px] bg-gray-100 group hover:bg-grin duration-300 transition-all">
             <h3 class="font-roboto font-bold text-[32px] text-blak group-hover:text-white">Secure and Instant Cash Advances</h3>
             <img src="./assets/images/cash1.png" alt="">
@@ -253,7 +264,7 @@
               No more waiting weeks—convert daily credit card transactions into cash within 24 hours to keep your business running smoothly.</p>
           </div>
 
-          <div class="flex flex-col justify-between items-start p-[48px] gap-[24px] max-w-[456px]
+          <div class="flex flex-col justify-between items-start p-[48px] gap-[24px] mx-auto max-w-[456px]
            rounded-[25px] bg-gray-100 group hover:bg-grin duration-300 transition-all">
             <h3 class="font-roboto font-bold text-[32px] text-blak group-hover:text-white">Transparent and Fair Pricing Process</h3>
             <img src="./assets/images/cash2.png" alt="">
@@ -261,7 +272,7 @@
               No more waiting weeks—convert daily credit card transactions into cash within 24 hours to keep your business running smoothly.</p>
           </div>
 
-          <div class="flex flex-col justify-between items-start p-[48px] gap-[24px] max-w-[456px]
+          <div class="flex flex-col justify-between items-start p-[48px] gap-[24px] mx-auto max-w-[456px]
            rounded-[25px] bg-gray-100 group hover:bg-grin duration-300 transition-all">
             <h3 class="font-roboto font-bold text-[32px] text-blak group-hover:text-white">Flexible and Secure Payout Options</h3>
             <img src="./assets/images/cash3.png" alt="">
