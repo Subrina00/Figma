@@ -65,7 +65,12 @@ new Chart(ctx, {
 
 const menuBtn = document.getElementById('menuBtn');
 const navMenu = document.getElementById('navMenu');
+const closeBtn = document.getElementById('closeBtn');
 
 menuBtn.addEventListener('click', () => {
   navMenu.classList.toggle('hidden');
 });
+
+closeBtn.addEventListener('click', () => {
+  navMenu.classList.toggle('hidden');
+})

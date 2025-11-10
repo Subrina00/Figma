@@ -12,7 +12,9 @@
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.14/dist/tailwind.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
+  <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu,close" /> -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
 
   <script src="./assets/js/script.js" defer></script>
 </head>
@@ -40,27 +42,28 @@
           </nav>
 
           <div class="flex flex-col md:flex-row justify-between items-center gap-[16px] md:gap-[12px] lg:gap-[16px] xl:gap-[20px] xxl:gap-[24px]">
-            <button class="bg-llgrin text-grin font-semibold font-manrope p-[6px_16px] md:p-[8px_20px]
+            <button class="bg-llgrin text-grin font-semibold font-manrope lg:p-[6px_16px] md:p-[4px_14px]
             xxl:p-[16px_40px] rounded-[50px] cursor-pointer text-[16px] md:text-[8px] lg:text-[15px] xl:text-[17px] xxl:text-[20px] hidden md:block">Sign In</button>
-            <button class="bg-blak text-white font-semibold font-manrope p-[6px_16px] md:p-[8px_20px]
+            <button class="bg-blak text-white font-semibold font-manrope lg:p-[6px_16px] md:p-[4px_14px]
             xxl:p-[16px_40px] rounded-[50px] cursor-pointer text-[16px] md:text-[8px] lg:text-[15px] xl:text-[17px] xxl:text-[20px] hidden md:block">Sign Up</button>
           </div>
 
-        <div class="md:hidden z-50">
+        <div class="md:hidden z-30">
           <span id="menuBtn" class="material-symbols-outlined cursor-pointer text-3xl">menu</span>
         </div>
 
-        <div id="nevMenu" class="hidden absolute z-40">
-          <ul class="flex flex-col justify-between items-center gap-[20px]">
-              <li class="font-roboto text-black text-[16px] md:text-[14px] lg:text-[16px] xxl:text-[18px]"><a href="#">Services</a></li>
-              <li class="font-roboto text-black text-[16px] md:text-[14px] lg:text-[16px] xxl:text-[18px]"><a href="#">Works</a></li>
-              <li class="font-roboto text-black text-[16px] md:text-[14px] lg:text-[16px] xxl:text-[18px]"><a href="#">Different</a></li>
-              <li class="font-roboto text-black text-[16px] md:text-[14px] lg:text-[16px] xxl:text-[18px]"><a href="#">Reviews</a></li>
-              <li class="font-roboto text-black text-[16px] md:text-[14px] lg:text-[16px] xxl:text-[18px]"><a href="#">Pricing</a></li>
-              <li class="font-roboto text-black text-[16px] md:text-[14px] lg:text-[16px] xxl:text-[18px]"><a href="#">Contact</a></li>
+        <div id="navMenu" class="fixed z-40 bg-white top-0 right-0 w-[250px] h-screen shadow-md backdrop-blur-3xl hidden">
+          <span id="closeBtn" class="material-symbols-outlined pt-2 pl-3">close</span>
+          <ul class="flex flex-col justify-start items-center gap-[20px] mt-[20px]">
+              <li class="font-roboto text-black text-[16px]"><a href="#">Services</a></li>
+              <li class="font-roboto text-black text-[16px]"><a href="#">Works</a></li>
+              <li class="font-roboto text-black text-[16px]"><a href="#">Different</a></li>
+              <li class="font-roboto text-black text-[16px]"><a href="#">Reviews</a></li>
+              <li class="font-roboto text-black text-[16px]"><a href="#">Pricing</a></li>
+              <li class="font-roboto text-black text-[16px]"><a href="#">Contact</a></li>
+              <li class="font-roboto text-[16px] text-grin font-bold"><a href="#">Sign In</a></li>
+              <li class="font-roboto text-grin text-[16px] font-bold"><a href="#">Sign Up</a></li>
             </ul>
-            <a href="#">Sign In</a>
-            <a href="#">Sign Up</a>
         </div>
       </div>
 
@@ -77,12 +80,12 @@
 
         <!-- title -->
 
-        <div class="flex flex-col justify-center items-center mb-[60px] lg:mb-[86px] xl:mb-[108px] xxl:mb-[130px]">
+        <div class="flex flex-col justify-center items-center mb-[60px] lg:mb-[86px] xl:mb-[108px] xxl:mb-[130px] max-w-[1042px] mx-auto">
           <button class="bg-llgrin text-grin font-[500] text-[14px] sm:text-[16px] md:text-[20px]
            p-[4px_16px] font-manrope md:p-[6px_20px] xxl:p-[8px_24px] rounded-[50px]">Fast. secure. hassle-free</button>
           <div class="flex flex-col justify-center items-center gap-0">
             <p class="font-roboto text-blak text-center inline-flex text-[16px] xs:text-[20px] sm:text-[30px] md:text-[36px] lg:text-[51px]
-             xl:text-[60px] xxl:text-[72px] font-extrabold mb-0 mt-[30px] xxl:mt-[40px]">Get Paid Faster <span class="px-2 mt-2 sm:mt-3 md:mt-4 lg:mt-5 xl:mt-6 xxl:mt-7"><img src="./assets/images/home.png" 
+             xl:text-[60px] xxl:text-[72px] font-extrabold mb-0 mt-[30px] xxl:mt-[40px]">Get Paid Faster <span class="px-2 mt-0 xs:mt-2 sm:mt-3 md:mt-4 lg:mt-5 xl:mt-6 xxl:mt-7"><img src="./assets/images/home.png" 
               alt="" class="h-[18px] sm:h-[20px] md:h-[20px] lg:h-[34px] xl:h-[40px] xxl:h-[48px]"></span> Instant Cash</p>
               <p class="font-roboto text-blak text-center inline-flex text-[16px] xs:text-[20px] sm:text-[30px] md:text-[36px] lg:text-[51px]
              xl:text-[60px] xxl:text-[72px] font-extrabold -mt-3">for Businesses!</p>
@@ -101,49 +104,52 @@
 
           <!-- card1 -->
 
-           <div class="bg-llgrin py-[46px] px-[28px] rounded-[24px] flex flex-col justify-center items-center gap-[54px] max-w-[457px] mx-auto">
+           <div class="bg-llgrin py-[24px] px-[16px] sm:py-[40px] sm:px-[24px] xl:py-[46px] xl:px-[28px]
+            rounded-[24px] flex flex-col justify-center items-center gap-[40px] md:gap-[44px] xxl:gap-[54px] max-w-[320px] md:max-w-[400px] xl:max-w-[457px] lg:h-[600px] xl:h-[665px] mx-auto">
               <div class="flex justify-between items-start gap-[24px]">
-                <img src="./assets/images/card1.png" alt="" class="h-[48px]">
-                <p class="text-[32px] font-semibold font-roboto max-w-[316px] leading-[40px] text-blak">Sales overview from Previous Day</p>
+                <img src="./assets/images/card1.png" alt="" class="h-[40px] sm:h-[48px]">
+                <p class="text-[24px] md:text-[26px] xxl:text-[32px] font-semibold font-roboto max-w-[316px] leading-[30px] md:leading-[33px] xxl:leading-[40px] text-blak">Sales overview from Previous Day</p>
               </div>
-                <div class="bg-white rounded-[24px] max-w-[400px] h-[361px] p-4">
-                  <div class="flex justify-between items-center gap-[16px] max-w-[308px]">
+                <div class="bg-white rounded-[24px] max-w-[280px] xl:max-w-[400px] h-[250px] xl:h-[361px] p-4">
+                  <div class="flex justify-center items-center gap-[12px] md:gap-[14px] xl:gap-[16px] max-w-[308px]">
                     <img src="./assets/images/sale.png" alt="">
-                    <p class="text-[24px] font-manrope font-[500] text-silver text-center">Total sales: <span class="font-bold font-roboto text-[32px]">$12,500</span></p>
+                    <p class="text-[16px] md:text-[18px] xl:text-[24px] font-manrope font-[500] text-silver text-center">Total sales: <span class="font-bold font-roboto text-[24px] md:text-[26px] xl:text-[32px]">$12,500</span></p>
                   </div>
 
                   <canvas id="chart" height="232"></canvas>
                 </div>
 
-              <div class="flex justify-between items-center gap-[8px] px-[24px] py-[16px] rounded-[24px] bg-lgrin">
+              <div class="flex justify-between items-center gap-[8px] px-[20px] py-[12px] md:px-[22px] md:py-[14px] xxl:px-[24px] xxl:py-[16px] rounded-[24px] bg-lgrin">
                 <img src="./assets/images/avgsale.png" alt="" class="h-[24px] w-[24px]">
-                <p class="text-[20px] font-roboto">Avg. sale: $104.16 / per transectio</p>
+                <p class="text-[12px] md:text-[14px] xl:text-[16px] xxl:text-[20px] font-roboto">Avg. sale: $104.16 / per transectio</p>
               </div>
            </div>
 
            <!-- card2 -->
 
-            <div class="bg-lgrin py-[46px] px-[28px] rounded-2xl flex flex-col justify-between items-center gap-[46px] max-w-[457px] mx-auto">
+            <div class="bg-lgrin py-[24px] px-[16px] sm:py-[40px] sm:px-[24px] xxl:py-[46px] xxl:px-[28px] rounded-2xl
+             flex flex-col justify-between items-center gap-[28px] md:gap-[30px] xl:gap-[32px] max-w-[320px] md:max-w-[400px] xl:max-w-[457px] lg:h-[600px] xl:h-[665px] mx-auto">
               <div class="flex justify-between items-start gap-[24px]">
-                <img src="./assets/images/card2.png" alt="" class="h-[48px]">
-                <p class="text-[32px] font-semibold font-roboto max-w-[316px] leading-[40px] text-blak">Factoring Possible Amount.</p>
+                <img src="./assets/images/card2.png" alt="" class="h-[40px] sm:h-[48px]">
+                <p class="text-[24px] md:text-[26px] xxl:text-[32px] font-semibold font-roboto max-w-[316px] leading-[30px] md:leading-[33px] xxl:leading-[40px] text-blak">Factoring Possible Amount.</p>
               </div>
-              <div class=" bg-white gap-[16px] max-h-[125px] max-w[245px] p-[24px] rounded-[25px]">
-                <p class="font-manrope text-silver text-[24px]">Available amount</p>
-                <p class="font-roboto text-blak font-semibold text-[32px]">$15,375 <span class="text-[18px] ml-[24px] text-center">USD</span></p>
+              <div class=" bg-white gap-[16px] max-h-[125px] max-w[245px] p-[16px] md:p-[20px] xxl:p-[24px] rounded-[25px]">
+                <p class="font-manrope text-silver text-[20px] lg:text-[24px]">Available amount</p>
+                <p class="font-roboto text-blak font-semibold text-[24px] xl:text-[32px]">$15,375 <span class="text-[14px] md:text-[18px] ml-[24px] text-center">USD</span></p>
               </div>
-              <div class="flex flex-col gap-[30px] p-[24px] justify-between items-center bg-white rounded-[25px]">
+              <div class="flex flex-col gap-[30px] p-[20px] xl:p-[24px] justify-between items-center bg-white rounded-[25px]">
                 <div class="flex justify-between items-start gap-[16px] max-w-[348px]">
-                  <img src="./assets/images/sale.png" alt="" class="h-[32px]">
-                  <p class="font-roboto text-[24px] font-[500] text-blak">Factored amount vs. remaining balance</p>
+                  <img src="./assets/images/sale.png" alt="" class="h-[24px] md:h-[28px] xl:h-[32px]">
+                  <p class="font-roboto text-[20px] xl:text-[24px] font-[500] text-blak">Factored amount vs. remaining balance</p>
                 </div>
-                <div class="bg-llgrin flex flex-col gap-[64px] p-[24px] rounded-[25px] max-w-[374px]">
+                <div class="bg-llgrin flex flex-col gap-[30px] xl:gap-[50px] p-[16px] lg:p-[24px] rounded-[25px] max-w-[280px] lg:max-w-[374px]">
                   <div class="relative">
-                    <p class="text-[20px] font-semibold font-roboto text-silver">Factored Balance <span class="text-[24px] font-bold text-blak ml-[40px]">$11,531.25</span></p>
-                    <p class="text-[18px] font-semibold font-roboto text-blak absolute left-[210px] top-[64px]">75%</p>
+                    <p class="text-[14px] md:text-[15px] xl:text-[20px] font-semibold font-roboto text-silver">Factored Balance <span class="text-[16px] lg:text-[24px] font-bold text-blak ml-[10px] xl:ml-[20px]">$11,531.25</span></p>
+                    <p class="text-[12px] md:text-[16px] xl:text-[18px] font-semibold font-roboto text-blak absolute
+                     left-[150px] top-[50px] md:top-[32px] xl:left-[210px] xl:top-[54px]">75%</p>
                   </div>
                   <div class="h-[15px] bg-gray-100 rounded-full overflow-hidden max-w-[305px]">
-                    <div class="h-full bg-grin rounded-full w-[228px]"></div>
+                    <div class="h-full bg-grin rounded-full w-[150px] md:w-[180px] xl:w-[228px]"></div>
                   </div>
                 </div>
               </div>
@@ -151,16 +157,17 @@
 
             <!-- card3 -->
 
-            <div class="bg-yelo py-[46px] px-[24px] rounded-[25px] flex flex-col justify-center items-center gap-[50px] max-w-[457px] mx-auto">
+            <div class="bg-yelo py-[24px] px-[16px] sm:py-[40px] sm:px-[24px] xxl:py-[46px] xxl:px-[28px] rounded-[25px]
+             flex flex-col justify-center items-center gap-[30px] xl:gap-[36px] lg:h-[600px] xl:h-[665px] max-w-[320px] md:max-w-[400px] xl:max-w-[457px] mx-auto">
               <div class="flex justify-between items-start gap-[24px]">
-                <img src="./assets/images/card3.png" alt="" class="h-[48px]">
-                <p class="text-[32px] font-semibold font-roboto max-w-[316px] leading-[40px] text-blak">Secure & Streamlined Workflow</p>
+                <img src="./assets/images/card3.png" alt="" class="h-[40px] sm:h-[48px]">
+                <p class="text-[20px] md:text-[24px] xxl:text-[32px] font-semibold font-roboto max-w-[316px] leading-[30px] lg:leading-[40px] text-blak">Secure & Streamlined Workflow</p>
               </div>
-              <div class="flex flex-col max-w-[266.5px] max-h-[124.69px] bg-white px-[24px] py-[20px]
+              <div class="flex flex-col max-w-[266.5px] max-h-[124.69px] bg-white px-[20px] py-[18px] lg:px-[24px] lg:py-[20px]
                gap-[16px] rounded-[25px] relative -rotate-[12.89deg] top-[20px]">
                 <div class="flex justify-between items-center gap-[36px]">
-                  <p class="text-blak text-[24px] font-[700] font-roboto">Recent User</p>
-                  <p class="text-silver text-[14px]">View All</p>
+                  <p class="text-blak text-[20px] lg:text-[24px] font-[700] font-roboto">Recent User</p>
+                  <p class="text-silver text-[12px] lg:text-[14px]">View All</p>
                 </div>
                 <div class="flex justify-between items-center">
                   <img src="./assets/images/man1.png" alt="" class="">
@@ -171,21 +178,21 @@
                   <img src="./assets/images/nine.png" alt="" class="relative -left-[50px]">
                 </div>
               </div>
-              <div class="max-w-[195.61px] max-h-[165.95px] flex flex-col gap-[16px]
-               py-[20px] px-[24px] bg-white rounded-[25px] relative left-[62px] rotate-[2.5deg] top-[10px]">
-                <p class="font-roboto font-semibold text-[18px] text-silver">Total balance</p>
-                <p class="font-roboto font-bold text-blak text-[32px]">23,576.00</p>
-                <p class="text-[18px] font-semibold font-manrope text-silver"><span class="bg-llgrin inline-flex justify-center
+              <div class="max-w-[195.61px] max-h-[165.95px] flex flex-col gap-[12px] xl:gap-[16px] px-[20px] py-[16px]
+               lg:py-[20px] lg:px-[24px] bg-white rounded-[25px] relative left-[50px] lg:left-[62px] rotate-[2.5deg] top-[10px]">
+                <p class="font-roboto font-semibold text-[14px] lg:text-[18px] text-silver">Total balance</p>
+                <p class="font-roboto font-bold text-blak text-[24px] lg:text-[32px]">23,576.00</p>
+                <p class="text-[14px] lg:text-[18px] font-semibold font-manrope text-silver"><span class="bg-llgrin inline-flex justify-center
                    items-center h-[20px] w-[20px] rounded-full mr-[16px]">+</span>Add Number</p>
               </div>
-              <div class="flex justify-between items-center gap-[10px] md:gap-[12px] xl:gap-[16px] xxl:gap-[20px] max-w-[373px]
-               max-h-[96px] py-[16px] px-[24px] rounded-[25px] bg-white relative rotate-[6.68deg] -top-[13px]">
+              <div class="flex justify-between items-center gap-[8px] md:gap-[10px] xl:gap-[16px] xxl:gap-[20px] max-w-[373px]
+               max-h-[96px] py-[12px] px-[20px] lg:py-[16px] lg:px-[24px] rounded-[25px] bg-white relative rotate-[6.68deg] -top-[13px]">
                 <img src="./assets/images/man6.png" alt="">
-                <div class="min-w-[126px]">
+                <div class="min-w-[100px] lg:min-w-[126px]">
                   <p class="font-roboto font-bold text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px] xl:text-[20px] xxl:text-[24px] text-blak">Online</p>
                   <p class="font-manrope text-[8px] sm:text-[10px] lg:text-[12px] xl:text-[14px] xxl:text-[16px] font-[400] text-silver">Tomy Restaurant</p>
                 </div>
-                <div class="">
+                <div class="flex flex-col justify-between items-center">
                   <p class="font-roboto font-semibold text-[10px] sm:text-[12px] lg:text-[14px] xl:text-[16px] xxl:text-[20px] text-blak">+$10k</p>
                   <button class="px-[16px] py-[8px] rounded-[92px] bg-llgrin text-grin text-[8px]
                    sm:text-[9px] lg:text-[10px] xl:text-[12px] xxl:text-[14px] font-semibold">confirm</button>
@@ -200,9 +207,9 @@
     </section>
 
 
-    <div class="overflow-hidden bg-grin border rounded w-full h-[52.5px] sm:h-[70px] md:[84px] lg:h-[112px] xl:h-[140px] xxl:h-[168px] flex items-center">
+    <div class="overflow-hidden z-10 bg-grin border rounded w-full h-[52.5px] sm:h-[70px] md:[84px] lg:h-[112px] xl:h-[140px] xxl:h-[168px] flex items-center">
 
-      <div class="mx-auto flex justify-between items-center gap-[27px] sm:[40px] md:gap-[48px] lg:gap-[64px] xl:gap-[80px] xxl:gap-[96px]">
+      <div class="container mx-auto z-20 flex justify-between items-center gap-[27px] sm:[40px] md:gap-[48px] lg:gap-[64px] xl:gap-[80px] xxl:gap-[96px]">
         <div class="flex justify-center items-center gap-[27px] sm:[40px] md:gap-[48px] lg:gap-[64px] xl:gap-[80px] xxl:gap-[96px] bg-grin pl-[10px] sm:pl-[20px] lg:pl-[40px] xl:pl-[80px] xxl:pl-[100px] pr-[20px] z-50">
           <div class="flex flex-col justify-center items-center min-w-[100px] sm:min-w-[120px] md:min-w-[140px] lg:min-w-[160px] xl:min-w-[180px] xxl:min-w-[200px]">
             <p class="text-[14px] sm:text-[16px] lg:text-[20px] xl:text-[22px] xxl:text-[24px] font-bold font-roboto text-white">Trusted By</p>
@@ -228,7 +235,7 @@
 
 
     <section id="services">
-      <div class="container mx-auto mt-[110px] md:mt-[120px] xxl:mt-[141px]">
+      <div class="container mx-auto mt-[110px] md:mt-[120px] xxl:mt-[141px] mb-[133px]">
 
         <!-- title -->
 
@@ -254,32 +261,33 @@
         <!-- cards -->
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-between items-center gap-[36px] mt-[70px]
-         sm:mt-[80px] md:mt-[90px] lg:mt-[110px] xl:mt-[120px] xxl:mt-[133px] mb-6 mx-auto">
+         sm:mt-[80px] md:mt-[90px] lg:mt-[110px] xl:mt-[120px] xxl:mt-[133px] mx-auto">
 
-          <div class="flex flex-col justify-between items-start p-[48px] gap-[24px] mx-auto max-w-[456px]
+          <div class="flex flex-col justify-between items-start p-[32px] xl:p-[48px] gap-[20px] xl:gap-[24px] mx-auto max-w-[320px] md:max-w-[350px] xl:max-w-[456px]
            rounded-[25px] bg-gray-100 group hover:bg-grin duration-300 transition-all">
-            <h3 class="font-roboto font-bold text-[32px] text-blak group-hover:text-white">Secure and Instant Cash Advances</h3>
+            <h3 class="font-roboto font-bold text-[24px] md:text-[27px] xl:text-[30px] xxl:text-[32px] text-blak group-hover:text-white">Secure and Instant Cash Advances</h3>
             <img src="./assets/images/cash1.png" alt="">
-            <p class="text-[20px] font-manrope text-silver group-hover:text-white">
+            <p class="text-[14px] md:text-[16px] xl:text-[20px] font-manrope text-silver group-hover:text-white">
               No more waiting weeks—convert daily credit card transactions into cash within 24 hours to keep your business running smoothly.</p>
           </div>
 
-          <div class="flex flex-col justify-between items-start p-[48px] gap-[24px] mx-auto max-w-[456px]
+          <div class="flex flex-col justify-between items-start p-[32px] xl:p-[48px] gap-[20px] xl:gap-[24px] mx-auto max-w-[320px] md:max-w-[350px] xl:max-w-[456px]
            rounded-[25px] bg-gray-100 group hover:bg-grin duration-300 transition-all">
-            <h3 class="font-roboto font-bold text-[32px] text-blak group-hover:text-white">Transparent and Fair Pricing Process</h3>
+            <h3 class="font-roboto font-bold text-[24px] md:text-[27px] xl:text-[30px] xxl:text-[32px] text-blak group-hover:text-white">Transparent and Fair Pricing Process</h3>
             <img src="./assets/images/cash2.png" alt="">
-            <p class="text-[20px] font-manrope text-silver group-hover:text-white">
+            <p class="text-[14px] md:text-[16px] xl:text-[20px] font-manrope text-silver group-hover:text-white">
               No more waiting weeks—convert daily credit card transactions into cash within 24 hours to keep your business running smoothly.</p>
           </div>
 
-          <div class="flex flex-col justify-between items-start p-[48px] gap-[24px] mx-auto max-w-[456px]
+          <div class="flex flex-col justify-between items-start p-[32px] xl:p-[48px] gap-[20px] xl:gap-[24px] mx-auto max-w-[320px] md:max-w-[350px] xl:max-w-[456px]
            rounded-[25px] bg-gray-100 group hover:bg-grin duration-300 transition-all">
-            <h3 class="font-roboto font-bold text-[32px] text-blak group-hover:text-white">Flexible and Secure Payout Options</h3>
+            <h3 class="font-roboto font-bold text-[24px] md:text-[27px] xl:text-[30px] xxl:text-[32px] text-blak group-hover:text-white">Flexible and Secure Payout Options</h3>
             <img src="./assets/images/cash3.png" alt="">
-            <p class="text-[20px] font-manrope text-silver group-hover:text-white">
+            <p class="text-[14px] md:text-[16px] xl:text-[20px] font-manrope text-silver group-hover:text-white">
               No more waiting weeks—convert daily credit card transactions into cash within 24 hours to keep your business running smoothly.</p>
           </div>
         </div>
+
 
       </div>
     </section>
